@@ -1,0 +1,61 @@
+{
+  "contractName": "AaveClone",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/AaveClone.sol\":\"AaveClone\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/AaveClone.sol\":{\"keccak256\":\"0xffc2cd36b2c1ecdeac2affbd7c60945138477fefc69321601ace89423023633c\",\"license\":\"MIT pragma solidity\",\"urls\":[\"bzz-raw://b01dd99bf0078461fab7c830d39145861356145c1717e30d341c7c8a68af2b1a\",\"dweb:/ipfs/QmYwEdc3fmgKAy96h7qLBxGjoknGXxDv7NjsEoZYmPhLoL\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220fcac35a7a87341b289fe30d9e1475e2bfeeb5ed738c11ebc074b12852f11b95f64736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220fcac35a7a87341b289fe30d9e1475e2bfeeb5ed738c11ebc074b12852f11b95f64736f6c63430008000033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "56:75:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "56:75:0:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT pragma solidity ^0.8.0;\ncontract AaveClone {\n// Define las estructuras de datos y funciones aquí\n}\n",
+  "sourcePath": "/home/oliver/Proyects/my-truffle-project/aave-clone/contracts/AaveClone.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/AaveClone.sol",
+    "exportedSymbols": {
+      "AaveClone": [
+        1
+      ]
+    },
+    "id": 2,
+    "license": "MIT pragma solidity",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1,
+        "linearizedBaseContracts": [
+          1
+        ],
+        "name": "AaveClone",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 2,
+        "src": "56:75:0"
+      }
+    ],
+    "src": "56:76:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-10-02T13:47:32.996Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
