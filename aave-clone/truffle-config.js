@@ -6,7 +6,18 @@ module.exports = {
       network_id: '*',
     }
   },
-  compilers: { solc: { version: '0.8.20', }, },
+  compilers: {
+    solc: {
+      version: '0.8.20',
+      settings: {
+        remappings: [":@chainlink/=@chainlink/"],
+        optimizer: {
+          enabled: true,
+          runs: 200
+        }
+      }
+    },
+  },
 }
 
 
