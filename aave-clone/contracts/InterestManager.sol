@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.27;
 
 contract InterestManager {
     uint256 public annualInterestRate; // Porcentaje de interés anual en base 10000 (p.ej., 500 = 5%)
