@@ -1,221 +1,127 @@
-# my-truffle-project
-Planificación del Proyecto
-Introducción
-Este documento describe la planificación del proyecto para desarrollar una aplicación similar a Aave utilizando Truffle para los contratos inteligentes y una interfaz de usuario. La planificación se divide en varias etapas, incluyendo análisis de datos, desarrollo de contratos inteligentes, integración, pruebas y desarrollo de la interfaz de usuario.
+# My Truffle Project
 
-Etapas del Proyecto
-1. Análisis de Requisitos
-Objetivos:
-Definir los requisitos funcionales y no funcionales del sistema.
-Identificar las funcionalidades principales del proyecto.
-Tareas:
-Reunir y documentar los requisitos del sistema.
-Crear un documento de requerimientos detallado.
-Duración:
-1 semana
-2. Diseño del Sistema
-Objetivos:
-Diseñar la arquitectura del sistema.
-Crear diagramas de flujo y diagramas de clases para los contratos inteligentes.
-Tareas:
-Diseñar la arquitectura del sistema.
-Crear diagramas de flujo y diagramas de clases.
-Definir la estructura de los contratos inteligentes.
-Duración:
-1 semana
-3. Desarrollo de Contratos Inteligentes
-Objetivos:
-Implementar los contratos inteligentes utilizando Solidity.
-Desarrollar contratos para depósitos, préstamos, colaterales y oráculos de precios.
-Tareas:
-Implementar el contrato MyToken.
-Implementar el contrato DepositContract.
-Implementar el contrato LendingProtocol.
-Implementar el contrato ChainlinkOracle.
-Duración:
-2 semanas
-4. Integración de Oráculos
-Objetivos:
-Integrar Chainlink para obtener precios en tiempo real.
-Asegurar que los contratos inteligentes puedan interactuar con el oráculo de precios.
-Tareas:
-Configurar Chainlink en el proyecto.
-Integrar el contrato ChainlinkOracle con el contrato LendingProtocol.
-Probar la integración con datos de precios en tiempo real.
-Duración:
-1 semana
-5. Pruebas de Contratos Inteligentes
-Objetivos:
-Escribir y ejecutar pruebas exhaustivas para los contratos inteligentes.
-Asegurar que los contratos funcionen correctamente y sin vulnerabilidades.
-Tareas:
-Escribir pruebas unitarias para cada contrato.
-Ejecutar pruebas utilizando Truffle.
-Corregir cualquier error o vulnerabilidad encontrado.
-Duración:
-1 semana
-6. Desarrollo de la Interfaz de Usuario
-Objetivos:
-Desarrollar una interfaz de usuario para interactuar con los contratos inteligentes.
-Implementar funcionalidades para depósitos, retiros, préstamos y devoluciones.
-Tareas:
-Diseñar la interfaz de usuario.
-Implementar la interfaz utilizando HTML, CSS y JavaScript.
-Integrar la interfaz con los contratos inteligentes utilizando Web3.js.
-Duración:
-2 semanas
-7. Integración del Sistema
-Objetivos:
-Integrar los contratos inteligentes con la interfaz de usuario.
-Asegurar que todas las funcionalidades del sistema estén correctamente integradas.
-Tareas:
-Conectar la interfaz de usuario con los contratos inteligentes desplegados.
-Probar la integración completa del sistema.
-Corregir cualquier problema de integración.
-Duración:
-1 semana
-8. Pruebas del Sistema
-Objetivos:
-Realizar pruebas completas del sistema para asegurar su correcto funcionamiento.
-Asegurar que el sistema cumpla con todos los requisitos definidos.
-Tareas:
-Realizar pruebas funcionales y no funcionales.
-Ejecutar pruebas de usuario para obtener retroalimentación.
-Corregir cualquier problema encontrado durante las pruebas.
-Duración:
-1 semana
-9. Despliegue y Mantenimiento
-Objetivos:
-Desplegar el sistema en un entorno de producción.
-Proporcionar soporte y mantenimiento continuo.
-Tareas:
-Desplegar los contratos inteligentes en la red principal de Ethereum.
-Desplegar la interfaz de usuario en un servidor web.
-Proporcionar soporte y mantenimiento continuo.
-Duración:
-1 semana (despliegue inicial) + mantenimiento continuo
-Cronograma del Proyecto
-Etapa	Duración	Fecha de Inicio	Fecha de Finalización
-Análisis de Requisitos	1 semana	01/01/2023	07/01/2023
-Diseño del Sistema	1 semana	08/01/2023	14/01/2023
-Desarrollo de Contratos	2 semanas	15/01/2023	28/01/2023
-Integración de Oráculos	1 semana	29/01/2023	04/02/2023
-Pruebas de Contratos	1 semana	05/02/2023	11/02/2023
-Desarrollo de la Interfaz	2 semanas	12/02/2023	25/02/2023
-Integración del Sistema	1 semana	26/02/2023	04/03/2023
-Pruebas del Sistema	1 semana	05/03/2023	11/03/2023
-Despliegue y Mantenimiento	1 semana	12/03/2023	18/03/2023
-Conclusión
-Esta planificación proporciona una hoja de ruta detallada para el desarrollo de una aplicación similar a Aave utilizando Truffle y una interfaz de usuario. Cada etapa del proyecto está claramente definida con objetivos, tareas y duración estimada. Esta planificación ayudará a asegurar que el proyecto se complete de manera eficiente y cumpla con todos los requisitos definidos.
+Este es un proyecto Truffle avanzado que implementa un sistema de préstamos similar a Aave. El proyecto incluye contratos inteligentes para manejar depósitos, préstamos y colaterales, utilizando oráculos para obtener precios en tiempo real.
 
-Gorka: por favor, cambia las fechas para que el proyecto empiece el día 01/10/2024
+## Objetivos del Proyecto
 
-GitHub Copilot: Claro, aquí tienes el cronograma actualizado con las fechas ajustadas para que el proyecto comience el 01/10/2024:
+- Desarrollar un sistema de préstamos descentralizado que permita a los usuarios pedir prestado y prestar activos de manera segura.
+- Implementar un mecanismo de colateralización para garantizar la seguridad de los préstamos.
+- Utilizar oráculos para obtener precios en tiempo real de los activos.
+- Proporcionar una interfaz de usuario para interactuar con los contratos inteligentes.
 
-Planificación del Proyecto
-Introducción
-Este documento describe la planificación del proyecto para desarrollar una aplicación similar a Aave utilizando Truffle para los contratos inteligentes y una interfaz de usuario. La planificación se divide en varias etapas, incluyendo análisis de datos, desarrollo de contratos inteligentes, integración, pruebas y desarrollo de la interfaz de usuario.
+## Contratos
 
-Etapas del Proyecto
-1. Análisis de Requisitos
-Objetivos:
-Definir los requisitos funcionales y no funcionales del sistema.
-Identificar las funcionalidades principales del proyecto.
-Tareas:
-Reunir y documentar los requisitos del sistema.
-Crear un documento de requerimientos detallado.
-Duración:
-1 semana
-2. Diseño del Sistema
-Objetivos:
-Diseñar la arquitectura del sistema.
-Crear diagramas de flujo y diagramas de clases para los contratos inteligentes.
-Tareas:
-Diseñar la arquitectura del sistema.
-Crear diagramas de flujo y diagramas de clases.
-Definir la estructura de los contratos inteligentes.
-Duración:
-1 semana
-3. Desarrollo de Contratos Inteligentes
-Objetivos:
-Implementar los contratos inteligentes utilizando Solidity.
-Desarrollar contratos para depósitos, préstamos, colaterales y oráculos de precios.
-Tareas:
-Implementar el contrato MyToken.
-Implementar el contrato DepositContract.
-Implementar el contrato LendingProtocol.
-Implementar el contrato ChainlinkOracle.
-Duración:
-2 semanas
-4. Integración de Oráculos
-Objetivos:
-Integrar Chainlink para obtener precios en tiempo real.
-Asegurar que los contratos inteligentes puedan interactuar con el oráculo de precios.
-Tareas:
-Configurar Chainlink en el proyecto.
-Integrar el contrato ChainlinkOracle con el contrato LendingProtocol.
-Probar la integración con datos de precios en tiempo real.
-Duración:
-1 semana
-5. Pruebas de Contratos Inteligentes
-Objetivos:
-Escribir y ejecutar pruebas exhaustivas para los contratos inteligentes.
-Asegurar que los contratos funcionen correctamente y sin vulnerabilidades.
-Tareas:
-Escribir pruebas unitarias para cada contrato.
-Ejecutar pruebas utilizando Truffle.
-Corregir cualquier error o vulnerabilidad encontrado.
-Duración:
-1 semana
-6. Desarrollo de la Interfaz de Usuario
-Objetivos:
-Desarrollar una interfaz de usuario para interactuar con los contratos inteligentes.
-Implementar funcionalidades para depósitos, retiros, préstamos y devoluciones.
-Tareas:
-Diseñar la interfaz de usuario.
-Implementar la interfaz utilizando HTML, CSS y JavaScript.
-Integrar la interfaz con los contratos inteligentes utilizando Web3.js.
-Duración:
-2 semanas
-7. Integración del Sistema
-Objetivos:
-Integrar los contratos inteligentes con la interfaz de usuario.
-Asegurar que todas las funcionalidades del sistema estén correctamente integradas.
-Tareas:
-Conectar la interfaz de usuario con los contratos inteligentes desplegados.
-Probar la integración completa del sistema.
-Corregir cualquier problema de integración.
-Duración:
-1 semana
-8. Pruebas del Sistema
-Objetivos:
-Realizar pruebas completas del sistema para asegurar su correcto funcionamiento.
-Asegurar que el sistema cumpla con todos los requisitos definidos.
-Tareas:
-Realizar pruebas funcionales y no funcionales.
-Ejecutar pruebas de usuario para obtener retroalimentación.
-Corregir cualquier problema encontrado durante las pruebas.
-Duración:
-1 semana
-9. Despliegue y Mantenimiento
-Objetivos:
-Desplegar el sistema en un entorno de producción.
-Proporcionar soporte y mantenimiento continuo.
-Tareas:
-Desplegar los contratos inteligentes en la red principal de Ethereum.
-Desplegar la interfaz de usuario en un servidor web.
-Proporcionar soporte y mantenimiento continuo.
-Duración:
-1 semana (despliegue inicial) + mantenimiento continuo
-Cronograma del Proyecto
-Etapa	Duración	Fecha de Inicio	Fecha de Finalización
-Análisis de Requisitos	1 semana	01/10/2024	07/10/2024
-Diseño del Sistema	1 semana	08/10/2024	14/10/2024
-Desarrollo de Contratos	2 semanas	15/10/2024	28/10/2024
-Integración de Oráculos	1 semana	29/10/2024	04/11/2024
-Pruebas de Contratos	1 semana	05/11/2024	11/11/2024
-Desarrollo de la Interfaz	2 semanas	12/11/2024	25/11/2024
-Integración del Sistema	1 semana	26/11/2024	02/12/2024
-Pruebas del Sistema	1 semana	03/12/2024	09/12/2024
-Despliegue y Mantenimiento	1 semana	10/12/2024	16/12/2024
+- `contracts/Migrations.sol`: Este archivo contiene el contrato Migrations, que se utiliza para realizar migraciones en el proyecto Truffle.
+- `contracts/MyToken.sol`: Este archivo contiene el contrato MyToken, que implementa un token ERC20 básico.
+- `contracts/DepositContract.sol`: Este archivo contiene el contrato DepositContract, que maneja los depósitos y retiros de tokens.
+- `contracts/LendingProtocol.sol`: Este archivo contiene el contrato LendingProtocol, que maneja los préstamos y los pagos de intereses.
+- `contracts/ChainlinkOracle.sol`: Este archivo contiene el contrato ChainlinkOracle, que utiliza Chainlink para obtener el precio de ETH en USD.
 
+## Migraciones
+
+- `migrations/1_initial_migration.js`: Este archivo contiene un script de migración inicial que se ejecuta cuando se realiza la migración del proyecto Truffle.
+- `migrations/2_deploy_token.js`: Este archivo contiene un script de migración para desplegar el contrato MyToken.
+- `migrations/3_deploy_deposit_contract.js`: Este archivo contiene un script de migración para desplegar el contrato DepositContract.
+- `migrations/4_deploy_lending_protocol.js`: Este archivo contiene un script de migración para desplegar el contrato LendingProtocol junto con el oráculo de Chainlink.
+
+## Pruebas
+
+- `test/depositContractTest.js`: Este archivo contiene pruebas para el contrato DepositContract.
+- `test/lendingProtocolTest.js`: Este archivo contiene pruebas para el contrato LendingProtocol.
+
+## Configuración de Truffle
+
+- `truffle-config.js`: Este archivo es el archivo de configuración principal de Truffle. Contiene la configuración para la red de blockchain, el compilador de Solidity y otros ajustes relacionados con el proyecto.
+
+## Documentación
+
+- `README.md`: Este archivo contiene la documentación del proyecto.
+
+## Funcionamiento del Proyecto
+
+### Depósitos y Retiros
+
+Los usuarios pueden depositar tokens en el contrato DepositContract. Los tokens depositados se almacenan en el contrato y los usuarios pueden retirarlos en cualquier momento.
+
+### Préstamos y Colaterales
+
+El contrato LendingProtocol permite a los usuarios pedir prestado tokens proporcionando un colateral. El colateral debe ser al menos igual al valor del préstamo solicitado. El contrato utiliza un oráculo de Chainlink para obtener el precio en tiempo real del activo proporcionado como colateral.
+
+### Oráculo de Precios
+
+El contrato ChainlinkOracle utiliza Chainlink para obtener el precio de ETH en USD. Esto garantiza que el valor del colateral se evalúe correctamente en función del precio actual del mercado.
+
+### Seguridad y Garantías
+
+Para garantizar la seguridad de los usuarios en sus préstamos, el sistema implementa las siguientes medidas:
+
+- **Colateralización**: Los usuarios deben proporcionar un colateral que sea al menos igual al valor del préstamo solicitado. Esto garantiza que el préstamo esté respaldado por un activo de valor equivalente.
+- **Oráculos de Precios**: Utilizamos oráculos de Chainlink para obtener precios en tiempo real de los activos. Esto asegura que el valor del colateral se evalúe correctamente en función del precio actual del mercado.
+- **Pruebas Exhaustivas**: El proyecto incluye pruebas exhaustivas para garantizar que los contratos inteligentes funcionen correctamente y que no haya vulnerabilidades.
+
+## Ventajas de Utilizar un Sistema Descentralizado de Préstamos
+
+- **Transparencia**: Todos los préstamos y transacciones se registran en la blockchain, lo que proporciona transparencia total.
+- **Seguridad**: Los contratos inteligentes garantizan que las reglas del sistema se apliquen de manera automática y sin intervención humana.
+- **Accesibilidad**: Cualquier persona con una conexión a Internet y una billetera compatible puede participar en el sistema de préstamos.
+- **Eficiencia**: Las transacciones se procesan de manera rápida y eficiente en la blockchain, sin necesidad de intermediarios.
+
+## Requisitos
+
+- Node.js
+- Truffle
+- Ganache (o cualquier cliente de blockchain compatible)
+- MetaMask (o cualquier billetera compatible con Ethereum)
+
+## Instalación y Uso
+
+1. Clona el repositorio:
+
+    ```sh
+    git clone https://github.com/tu-usuario/tu-repositorio.git
+    cd tu-repositorio
+    ```
+
+2. Instala las dependencias:
+
+    ```sh
+    npm install
+    ```
+
+3. Configura y ejecuta Ganache:
+
+    - Abre Ganache y crea un nuevo espacio de trabajo.
+
+4. Despliega los contratos:
+
+    ```sh
+    truffle migrate --reset
+    ```
+
+5. Ejecuta las pruebas:
+
+    ```sh
+    truffle test
+    ```
+
+6. Interactúa con los contratos:
+
+    - Usa la consola de Truffle:
+
+        ```sh
+        truffle console
+        ```
+
+    - O ejecuta scripts de interacción:
+
+        ```sh
+        truffle exec interact.js
+        ```
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio que te gustaría realizar.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
