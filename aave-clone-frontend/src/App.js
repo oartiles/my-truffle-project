@@ -1,14 +1,12 @@
 import logo from './logo.svg'
 import './App.css'
+import { useState } from 'react'
 
 function App () {
+  const [currentBalance, setCurrentBalance] = useState(0)
 
-  if (typeof window.ethereum !== 'undefined') {
-    window.web3 = new Web3(window.ethereum)
-    window.ethereum.enable()
-  } else {
-    console.log('No Ethereum browser detected. You should consider trying MetaMask!')
-  }
+  window.web3 = new Web3(window.ethereum)
+  window.ethereum.enable()
 
   const contractAddress = 'TU_DIRECCION_DE_CONTRATO'
   const contractABI =
@@ -24,18 +22,16 @@ function App () {
 
   const myTokenContract = new web3.eth.Contract(contractABI, contractAddress)
 
-  document.getElementById('getBalance').addEventListener('click', async () => {
+  const handlerGetBalance = async () => {
     const accounts = await web3.eth.getAccounts()
     const balance = await myTokenContract.methods.getBalance(accounts[0]).call()
-    document.getElementById('balance').innerText = web3.utils.fromWei(balance, 'ether')
-  })
+    setCurrentBalance(balance)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-      </header>
-      <body>
-      </body>
+      <h1>Balance: {currentBalance}</h1>
+      <button onClick={handlerGetBalance}>Get Balance</button>
     </div>
   )
 }
