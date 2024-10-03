@@ -1,8 +1,12 @@
-// SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract DepositContract { IERC20 public token; mapping(address => uint256) public balances;
+contract DepositContract {
+    IERC20 public token;
+    mapping(address => uint256)
+    public balances;
 
     constructor(IERC20 _token) {
         token = _token;
